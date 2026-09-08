@@ -23,7 +23,7 @@
   them — the cap-value checks are a doc-drift guard. No-server-key + Murakumo-only (G9) untouched."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.edn :as edn]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 #?(:clj
    (do
@@ -55,7 +55,7 @@
 (defn- prop-names [doc] (set (map name (keys (:properties (record-node doc))))))
 (defn- gate-map []
   (let [cg (get (manifest) "constitutionalGates")] (or (get cg "gates") cg)))
-(defn- gate-text [g] (str/lower-case (str (get (gate-map) g))))
+(defn- gate-text [g] (str/lower (str (get (gate-map) g))))
 
 ;; ── 14 gates + non-goals declared ──
 (deftest gates-and-nongoals-declared
