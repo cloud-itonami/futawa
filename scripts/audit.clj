@@ -1,4 +1,4 @@
-(require '[clojure.edn :as edn] '[clojure.java.io :as io] '[clojure.string :as str])
+(require '[clojure.edn :as edn] '[clojure.java.io :as io] '[kotoba.lang.text :as str])
 (def files (filter #(.isFile %) (file-seq (io/file "."))))
 (defn path [f] (str/replace-first (str f) #"^\./" ""))
 (doseq [f files :when (str/ends-with? (.getName f) ".edn")] (edn/read-string (slurp f)))

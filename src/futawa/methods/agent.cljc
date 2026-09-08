@@ -4,7 +4,7 @@
   surveillance (no GPS/telematics/V2X/DRM), G11 capacity caps (≤250cc/≤15kW/≤200kg), G6 sound ≤80dB,
   G16/G17 USDC + 10% tithe settlement (stops at :intent). Pure compute; the Murakumo llm host binding
   is the omitted leg (unused here)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def TITHE-BPS 1000)
 (def ^:private MAX-DISPLACEMENT-CC 250)
@@ -28,7 +28,7 @@
 (defn g8-surveillance-check
   "Check for prohibited surveillance components (G8)."
   [bom-items]
-  (let [hits (filterv (fn [i] (some #(str/includes? (str/lower-case (str/trim i)) %) PROHIBITED-SURVEILLANCE)) bom-items)]
+  (let [hits (filterv (fn [i] (some #(str/includes? (str/lower (str/trim i)) %) PROHIBITED-SURVEILLANCE)) bom-items)]
     (if (seq hits)
       {"ok" false "reason" (str "prohibited surveillance: " hits " (G8)")}
       {"ok" true "reason" "no surveillance components"})))
