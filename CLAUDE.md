@@ -126,8 +126,8 @@ futawa is the **build-side** companion of hodoki (EOL-side). Together they close
 ## Testing (R0)
 
 ```bash
-clojure -M -m futawa.test-runner
-bb scripts/audit.cljk
+kbb -M -m futawa.test-runner
+kbb scripts/audit.cljk
 ```
 
 The audit enforces EDN as canonical data, confines JSON/JSON-LD to `wire/`, and rejects deprecated Python, Go/TinyGo, requirements, and shell artifacts.

@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; futawa 二輪 — ingest seed.edn into a live kotoba node (cljc port of ingest_mcp.py).
 ;; ADR-2605261330.
 (ns futawa.kotoba.ingest-mcp

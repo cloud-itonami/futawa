@@ -9,9 +9,9 @@ forward-publishing. Lifecycle surveillance/repair loop closed with hodoki (EOL).
 | Lexicons | ✅ 8 canonical Datomic-native definitions in `data/lex/*.edn`; imported JSON wire schemas are preserved in `wire/lex/` and converted to `data/lex/*.wire.edn` |
 | Cells | 🟡 9 R0 declarations in `data/cells/`; social state-machine CLJC in `src/futawa/cells/` |
 | Manifest | ✅ canonical `manifest.edn`; JSON-LD mirror in `wire/manifest.jsonld` |
-| Tests | ✅ 38 tests / 178 assertions via `clojure -M -m futawa.test-runner` |
+| Tests | ✅ 38 tests / 178 assertions via `kbb -M -m futawa.test-runner` |
 | Methods | 🟡 agent, social, and MCP ingestion CLJC; offline build engine remains R1 |
-| Policy audit | ✅ `bb scripts/audit.cljk` parses EDN, enforces the wire boundary, and rejects deprecated Python/Go/TinyGo/shell artifacts |
+| Policy audit | ✅ `kbb scripts/audit.cljk` parses EDN, enforces the wire boundary, and rejects deprecated Python/Go/TinyGo/shell artifacts |
 
 ## Substrate-native status
 
