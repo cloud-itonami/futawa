@@ -13,7 +13,7 @@
 - `wire/` contains JSON/JSON-LD interoperability mirrors only; it is not an authoring source.
 - Python, Go/TinyGo, and legacy deployment shell implementations are deprecated and intentionally absent.
 
-Run `clojure -M -m futawa.test-runner` for tests and `bb scripts/audit.clj` for repository-policy checks.
+Run `clojure -M -m futawa.test-runner` for tests and `bb scripts/audit.cljk` for repository-policy checks.
 
 ## Overview
 
