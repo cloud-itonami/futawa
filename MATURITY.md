@@ -11,7 +11,7 @@ forward-publishing. Lifecycle surveillance/repair loop closed with hodoki (EOL).
 | Manifest | ✅ canonical `manifest.edn`; JSON-LD mirror in `wire/manifest.jsonld` |
 | Tests | ✅ 38 tests / 178 assertions via `clojure -M -m futawa.test-runner` |
 | Methods | 🟡 agent, social, and MCP ingestion CLJC; offline build engine remains R1 |
-| Policy audit | ✅ `bb scripts/audit.clj` parses EDN, enforces the wire boundary, and rejects deprecated Python/Go/TinyGo/shell artifacts |
+| Policy audit | ✅ `bb scripts/audit.cljk` parses EDN, enforces the wire boundary, and rejects deprecated Python/Go/TinyGo/shell artifacts |
 
 ## Substrate-native status
 
