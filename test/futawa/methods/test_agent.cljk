@@ -2,7 +2,7 @@
   "futawa 二輪 — substrate-native agent gate tests.
   Offline: capacity caps (G11), ABS-mandatory (G7), sound limit (G6), anti-surveillance (G8), USDC +
   tithe settlement (G16/G17/G18)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [futawa.methods.agent :as agent]))
 
 (deftest test-g11-displacement-cap

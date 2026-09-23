@@ -1,5 +1,5 @@
 (ns futawa.test-runner
-  (:require [clojure.java.io :as io] [clojure.test :as test]))
+  (:require [clojure.java.io :as io] [kotoba.test :as test]))
 (defn- file-ns [f]
   (with-open [r (java.io.PushbackReader. (io/reader f))]
     (second (read {:read-cond :allow :features #{:clj}} r))))
