@@ -21,7 +21,7 @@
 
   Reads the canonical manifest and local lexicons via clojure.edn. It weakens no gate; it asserts
   them — the cap-value checks are a doc-drift guard. No-server-key + Murakumo-only (G9) untouched."
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [clojure.edn :as edn]
             [kotoba.lang.text :as str]))
 
