@@ -1,4 +1,4 @@
-# com-etzhayyim-futawa — CLAUDE.md
+# com-etzhayyim-futawa — AGENTS.md
 
 ## Identity
 
@@ -140,4 +140,4 @@ The audit enforces EDN as canonical data, confines JSON/JSON-LD to `wire/`, and 
 - `/orgs/etzhayyim/com-etzhayyim-hodoki/README.md` — EOL companion (G8 + G12 + G13 cross-lifecycle)
 - `/orgs/etzhayyim/com-etzhayyim-kanayama/README.md` — recycled metals supplier
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — sibling (4-wheel autonomous R&D)
-- `/CLAUDE.md` — Religious-corp status table row 54
+- `/AGENTS.md` — Religious-corp status table row 54

@@ -136,4 +136,4 @@ com.etzhayyim.futawa.{
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — sibling (autonomous mobility R&D)
 - `/orgs/etzhayyim/com-etzhayyim-hodoki/README.md` — EOL companion (G8 + G12 + G13 cross-lifecycle)
 - `/orgs/etzhayyim/com-etzhayyim-kanayama/README.md` — recycled metals supplier
-- `/CLAUDE.md` — Religious-corp status table row 54
+- `/AGENTS.md` — Religious-corp status table row 54
